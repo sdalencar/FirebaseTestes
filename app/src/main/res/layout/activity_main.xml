@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nomeloja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/nome_loja"
+        app:layout_constraintBottom_toTopOf="@+id/contato"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/contato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/contato"
+        app:layout_constraintBottom_toTopOf="@+id/id"
+        app:layout_constraintTop_toBottomOf="@+id/nomeloja"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/id"
+        app:layout_constraintBottom_toTopOf="@+id/apelido"
+        app:layout_constraintTop_toBottomOf="@+id/contato"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/apelido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/apelido"
+        app:layout_constraintBottom_toTopOf="@+id/genero"
+        app:layout_constraintTop_toBottomOf="@+id/id"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/genero"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/nascimento"
+        app:layout_constraintTop_toBottomOf="@+id/apelido"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/nascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nascimento"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/genero"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/nome"
+        app:layout_constraintBottom_toTopOf="@+id/obs"
+        app:layout_constraintTop_toBottomOf="@+id/nascimento"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/obs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/obs"
+        app:layout_constraintBottom_toTopOf="@+id/telefone"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/sobrenome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/sobrenome"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/telefone"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:hint="@string/telefone"
+        app:layout_constraintBottom_toTopOf="@+id/sobrenome"
+        app:layout_constraintTop_toBottomOf="@+id/obs"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="salvar"
+        android:text="@string/gravar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sobrenome"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

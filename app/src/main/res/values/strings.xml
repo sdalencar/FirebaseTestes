@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FirebaseTestes</string>
+    <string name="gravar">gravar</string>
+    <string name="telefone">telefone</string>
+    <string name="sobrenome">sobrenome</string>
+    <string name="obs">obs</string>
+    <string name="nome">nome</string>
+    <string name="nascimento">nascimento</string>
+    <string name="genero">genero</string>
+    <string name="apelido">apelido</string>
+    <string name="id">id</string>
+    <string name="contato">contato</string>
+    <string name="nome_loja">nome loja</string>
+</resources>
